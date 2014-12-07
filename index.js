@@ -39,7 +39,7 @@ function createStream() {
 function parse(data) {
   if ('string' != typeof data) return;
 
-  var spl = data.split(' ');
+  var spl = data.trim().split(' ');
   if (!(spl.length >= 7)) return;
 
   var date = spl.splice(0, 6).join(' ');
