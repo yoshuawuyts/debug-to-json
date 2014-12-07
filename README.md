@@ -13,7 +13,7 @@ npm install debug-to-json
 
 ## Usage
 ```sh
-$ node ./app.js | debug-to-json
+$ node ./app.js | dtj
 {"time":"2014-05-18T23:47:06.545Z","hostname":"tweedy","pid":27374,"level":"debug","name":"mymodule","message":"Starting mymodule#derp()"}
 ```
 
@@ -26,6 +26,10 @@ choice. Unix all the way down.
 ## See also
 - [bole](http://ghub.io/bole) - tiny JSON logger
 - [bistre](http://ghub.io/bistre) - pretty bole logs
+
+## Contributors
+- [Yoshua Wuyts](https://github.com/yoshuawuyts)
+- [Hugh Kennedy](https://github.com/hughsk)
 
 ## License
 [MIT](https://tldrlegal.com/license/mit-license)

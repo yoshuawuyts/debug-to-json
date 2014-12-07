@@ -1,13 +1,24 @@
 {
   "name": "debug-to-json",
   "version": "1.0.0",
-  "description": "",
+  "description": "Convert debug logs to JSON",
   "main": "index.js",
   "scripts": {
     "test": "make test"
   },
   "repository": "yoshuawuyts/debug-to-json",
-  "keywords": [],
+  "bin": {
+    "debug-to-json": "./bin.js",
+    "dtj": "./bin.js"
+  },
+  "keywords": [
+    "debug",
+    "log",
+    "JSON",
+    "parse",
+    "bistre",
+    "bole"
+  ],
   "license": "MIT",
   "dependencies": {
     "split2": "^0.2.1",

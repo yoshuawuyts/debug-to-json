@@ -4,13 +4,8 @@
  * Module dependencies.
  */
 
-var dtj = require('./')
-
-/**
- * Options.
- */
-
-var opts = {};
+var through2 = require('through2');
+var dtj = require('./');
 
 /**
  * Parse.
@@ -19,5 +14,10 @@ var opts = {};
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 process.stdin
-  .pipe(dtj(opts))
+  .pipe(dtj())
+  .pipe(through2.obj(function(data, _, next) {
+    this.push(JSON.stringify(data));
+    this.push('\n');
+    next()
+  }))
   .pipe(process.stdout);
