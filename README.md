@@ -13,7 +13,7 @@ npm install debug-to-json
 
 ## Usage
 ```sh
-$ node ./app.js | dtj
+$ node ./app.js | dtj 
 {"time":"2014-05-18T23:47:06.545Z","hostname":"tweedy","pid":27374,"level":"debug","name":"mymodule","message":"Starting mymodule#derp()"}
 ```
 
