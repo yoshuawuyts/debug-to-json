@@ -23,7 +23,6 @@ to any logging. So in order to make `debug` output more parseable we turn it
 into JSON first, which in turn can be streamed to your logging location of
 choice. Unix all the way down.
 
-
 ## See also
 - [bole](http://ghub.io/bole) - tiny JSON logger
 - [bistre](http://ghub.io/bistre) - pretty bole logs
