@@ -21,6 +21,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "regex-utc-date": "^1.0.0",
     "split2": "^0.2.1",
     "stream-combiner": "^0.2.1",
     "through2": "^0.6.3"

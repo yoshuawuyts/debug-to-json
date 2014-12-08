@@ -2,6 +2,7 @@
  * Module dependencies
  */
 
+var utcRegex = require('regex-utc-date');
 var combine = require('stream-combiner');
 var through2 = require('through2');
 var split = require('split2');
@@ -43,7 +44,7 @@ function parse(data) {
   if (!(spl.length >= 7)) return;
 
   var date = spl.splice(0, 6).join(' ');
-  if (!(/\w{3}, \d{2} \w{3} \d{4} \d{2}:\d{2}:\d{2} GMT/).test(date)) return;
+  if (!utcRegex.test(date)) return;
 
   return {
     time: new Date(date).toISOString(),
