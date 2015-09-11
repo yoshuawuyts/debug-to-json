@@ -44,7 +44,7 @@ function parse(data) {
   if (!(spl.length >= 7)) return;
 
   var date = spl.splice(0, 6).join(' ');
-  if (!utcRegex.test(date)) return;
+  if (!utcRegex().test(date)) return;
 
   return {
     time: new Date(date).toISOString(),

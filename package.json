@@ -27,9 +27,9 @@
     "through2": "^0.6.3"
   },
   "devDependencies": {
-    "istanbul": "^0.3.4",
+    "istanbul": "^0.3.19",
     "make-lint": "^1.0.1",
-    "mocha": "^2.0.1",
+    "mocha": "^2.3.2",
     "should": "^4.3.0"
   },
   "files": [
