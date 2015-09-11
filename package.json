@@ -1,6 +1,6 @@
 {
   "name": "debug-to-json",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert debug logs to JSON",
   "main": "index.js",
   "scripts": {
