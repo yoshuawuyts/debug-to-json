@@ -34,6 +34,7 @@
   },
   "files": [
     "lib",
+    "bin",
     "LICENSE",
     "index.js",
     "HISTORY.md"
