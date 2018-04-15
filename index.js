@@ -43,13 +43,15 @@ function parse(data) {
   var spl = data.trim().split(' ');
   if (!(spl.length >= 7)) return;
 
-  var date = spl.splice(0, 6).join(' ');
-  if (!utcRegex().test(date)) return;
-
+  var time = spl.shift();
+  var level = 'debug';
+  var name = spl.shift();
+  var message = spl.join(' ');
+  
   return {
-    time: new Date(date).toISOString(),
-    level: 'debug',
-    name: spl.shift(),
-    message: spl.join(' ')
+    time: time,
+    level: level,
+    name: name,
+    message: message,
   };
 }
