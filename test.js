@@ -13,7 +13,7 @@ var dtj = require('./');
 describe('debug to json', function() {
   it('should parse `debug` output', function(next) {
     var stream = dtj();
-    var str = 'Sun, 07 Dec 2014 09:44:50 GMT mocha:runner run suite ctx.type= with a mime';
+    var str = '2014-12-07T09:44:50.000Z mocha:runner run suite ctx.type= with a mime';
 
     stream.once('data', function(nw) {
       assert.deepEqual(nw, {
